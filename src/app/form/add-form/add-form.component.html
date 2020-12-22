@@ -1,0 +1,58 @@
+<!-- <app-add-form></app-add-form> -->
+
+<div class="container ml-5 mr-5">
+  <div class="container-fluid">
+
+    <div class="row-fluid">
+      <label>Add Stocks</label>
+      <select class="form-control" >
+        <option (click)="AddApple()"><span>Apple &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{AppleStock?.highPrice}} </span></option>
+        <option (click)="AddGoogle()"><span>Google &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{GoogleStock?.highPrice}}</span></option>
+        <option (click)="AddMicrosoft()"><span>Microsoft &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{MicrosoftStock?.highPrice}}</span></option>
+        <option (click)="AddAmazon()"><span>Amazon &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{AmazonStock?.highPrice}}</span></option>
+        <option (click)="AddFacebook()"><span>Facebook &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{FacebookStock?.highPrice}}</span></option>
+      </select>
+      
+    </div>
+  </div>
+    <div class="container">
+        <span class="p-2">
+          <h3><strong>Watchlist</strong></h3>
+        </span>
+        <div class="row mb-2 ml-1 mr-1 row-cols-2">
+          <div class="col"><strong style="font-size: 20px">COMPANY</strong></div>
+          <div class="col" style="text-align: right;"><strong style="font-size: 20px">MARKET PRICE</strong></div>
+        </div>
+    </div>
+     <table class="table">
+       <tbody>
+        <tr >
+          <td>
+             <ul class="list-group list-group-flush">
+              <li class="list-group-item"><img src="assets/microsoft.png" width="40" height="40"> Microsoft</li>
+            </ul>
+          </td> 
+          <td  style="text-align: right;">
+             <ul class="list-group list-group-flush" >
+                <li class="list-group-item"> <strong style="font-size: 18px"> ${{MicrosoftStock?.highPrice}} </strong> <span style="font-size: 14px">USD</span> <br> <span style="color: green;font-size: 12px"> +${{MicrosoftStock?.lowPrice}} USD</span></li>    
+              </ul>
+          </td>
+         
+         </tr>
+           <tr >
+          <td>
+             <ul class="list-group list-group-flush">
+              <li class="list-group-item"><img src="assets/amazon.png" width="40" height="40"> Amazon</li>
+            </ul>
+          </td> 
+          <td  style="text-align: right;">
+             <ul class="list-group list-group-flush" >
+                <li class="list-group-item"> <strong style="font-size: 18px"> ${{AmazonStock?.highPrice}} </strong> <span style="font-size: 14px">USD</span> <br> <span style="color: green;font-size: 12px"> +${{AmazonStock?.lowPrice}} USD</span></li>    
+              </ul>
+          </td>
+         
+         </tr>
+
+       </tbody>
+     </table>
+   </div>

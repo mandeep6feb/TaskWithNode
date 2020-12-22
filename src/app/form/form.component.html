@@ -1,0 +1,84 @@
+<!-- <app-add-form></app-add-form> -->
+
+<div class="container ml-5 mr-5">
+
+    <div class="container">
+        <span class="p-2">
+          <h3><strong>Popular Stocks</strong></h3>
+        </span>
+        <div class="row mb-2 ml-1 mr-1 row-cols-2">
+          <div class="col"><strong style="font-size: 20px">COMPANY</strong></div>
+          <div class="col" style="text-align: right;"><strong style="font-size: 20px">MARKET PRICE</strong></div>
+        </div>
+    </div>
+     <table class="table">
+       <tbody>
+         <tr >
+          <td>
+             <ul class="list-group list-group-flush">
+              <li class="list-group-item"><img src="assets/apple.png" width="40" height="40"> Apple</li>
+            </ul>
+          </td> 
+          <td  style="text-align: right;">
+             <ul class="list-group list-group-flush" >
+                <li class="list-group-item"> <strong style="font-size: 18px"> ${{AppleStock?.highPrice}} </strong> <span style="font-size: 14px">USD</span> <br> <span style="color: green;font-size: 12px"> +${{AppleStock?.lowPrice}} USD</span></li>    
+              </ul>
+          </td>
+         
+         </tr>
+           <tr >
+          <td>
+             <ul class="list-group list-group-flush">
+              <li class="list-group-item"><img src="assets/google.png" width="40" height="40"> Google</li>
+            </ul>
+          </td> 
+          <td  style="text-align: right;">
+             <ul class="list-group list-group-flush" >
+                <li class="list-group-item"> <strong style="font-size: 18px"> ${{GoogleStock?.highPrice}} </strong> <span style="font-size: 14px">USD</span> <br> <span style="color: green;font-size: 12px"> +${{GoogleStock?.lowPrice}} USD</span></li>    
+              </ul>
+          </td>
+         
+         </tr>
+           <tr >
+          <td>
+             <ul class="list-group list-group-flush">
+              <li class="list-group-item"><img src="assets/microsoft.png" width="40" height="40"> Microsoft</li>
+            </ul>
+          </td> 
+          <td  style="text-align: right;">
+             <ul class="list-group list-group-flush" >
+                <li class="list-group-item"> <strong style="font-size: 18px"> ${{MicrosoftStock?.highPrice}} </strong> <span style="font-size: 14px">USD</span> <br> <span style="color: green;font-size: 12px"> +${{MicrosoftStock?.lowPrice}} USD</span></li>    
+              </ul>
+          </td>
+         
+         </tr>
+           <tr >
+          <td>
+             <ul class="list-group list-group-flush">
+              <li class="list-group-item"><img src="assets/amazon.png" width="40" height="40"> Amazon</li>
+            </ul>
+          </td> 
+          <td  style="text-align: right;">
+             <ul class="list-group list-group-flush" >
+                <li class="list-group-item"> <strong style="font-size: 18px"> ${{AmazonStock?.highPrice}} </strong> <span style="font-size: 14px">USD</span> <br> <span style="color: green;font-size: 12px"> +${{AmazonStock?.lowPrice}} USD</span></li>    
+              </ul>
+          </td>
+         
+         </tr>
+           <tr >
+          <td>
+             <ul class="list-group list-group-flush">
+              <li class="list-group-item"><img src="assets/fb.png" width="40" height="40"> Facebook</li>
+            </ul>
+          </td> 
+          <td  style="text-align: right;">
+             <ul class="list-group list-group-flush" >
+                <li class="list-group-item"> <strong style="font-size: 18px"> ${{FacebookStock?.highPrice}} </strong> <span style="font-size: 14px">USD</span> <br> <span style="color: green;font-size: 12px"> +${{FacebookStock?.lowPrice}} USD</span></li>    
+              </ul>
+          </td>
+         
+         </tr>
+
+       </tbody>
+     </table>
+   </div>
